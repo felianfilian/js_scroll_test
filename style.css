@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 1024px;
+  width: 100%;
+}
+
+.title-01 {
+  display: flex;
+  justify-content: center;
+
+  width: 100vws;
+
+  margin-bottom: 10px;
+  padding: 10px;
+
+  background-color: rgb(204, 204, 204);
+  font-size: 48px;
+}
+
+/* Char Filter */
+
+.char-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin: 0 10px 10px 10px;
+}
+
+.btn-char {
+  padding: 5px 10px;
+
+  background-color: rgb(209, 209, 209);
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Char Filter END */
+
+#state-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.state-item {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+
+  width: 32%;
+  height: 160px;
+
+  padding: 10px;
+
+  background-color: #fff;
+  border: 10px solid rgb(209, 209, 209);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.show {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .state-item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 535px) {
+  .state-item {
+    width: 96%;
+  }
+}
