@@ -1,8 +1,14 @@
+window.addEventListener("scroll", loadData);
+
 function init() {
   getStates();
 }
 
 let firstChars = ["ALLE"];
+
+function loadData() {
+  alert("test");
+}
 
 async function getStates(char) {
   let url = "./b-land.json";
